@@ -10,4 +10,5 @@ while True:
     client, addr = sock.accept()
     print(f"Получен запрос на соединение от (str(addr))")
     client.send('Hello world!'.encode("utf-8"))
+    client.send('Hello'.encode("utf-8"))
     client.close()
